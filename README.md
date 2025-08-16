@@ -13,8 +13,8 @@ This is a **Retrieval-Augmented Generation (RAG)** powered chatbot that allows y
 
 ```bash
 
-📂 Project Structure
-📁 RAG_QA_Bot/
+Project Structure
+RAG_QA_Bot/
 ├── frontend.py         # Streamlit UI application
 ├── chatbot.py          # Chat interface & LLM response logic
 ├── embedding_utils.py  # PDF chunking, embedding with Cohere, and retrieval with Pinecone
