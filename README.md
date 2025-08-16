@@ -2,13 +2,13 @@ This is a **Retrieval-Augmented Generation (RAG)** powered chatbot that allows y
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📄 Upload any PDF and extract contextual answers
-- 🧠 Uses **Cohere** for embedding + generation (`command-r`)
-- 📦 Stores vector embeddings in **Pinecone** for fast semantic retrieval
-- ⚡ Reranks results using `rerank-english-v2.0` for improved accuracy
-- 🎛️ Streamlit interface with real-time chat
+- Upload any PDF and extract contextual answers
+- Uses **Cohere** for embedding + generation (`command-r`)
+- Stores vector embeddings in **Pinecone** for fast semantic retrieval
+- Reranks results using `rerank-english-v2.0` for improved accuracy
+- Streamlit interface with real-time chat
 
 
 ```bash
@@ -53,24 +53,25 @@ These keys are securely entered through the Streamlit sidebar.
 
 ---
 
-📚 How It Works (RAG Flow)
-📄 Upload PDF → text extracted via PyMuPDF
+How It Works (RAG Flow)
 
-✂️ Text is split into chunks
+Upload PDF → text extracted via PyMuPDF
 
-🔡 Chunks are embedded using Cohere embed-english-v3.0
+Text is split into chunks
 
-💾 Stored in Pinecone vector DB
+Chunks are embedded using Cohere embed-english-v3.0
 
-❓ Ask question → vector search → top-k chunks retrieved
+Stored in Pinecone vector DB
 
-🧠 Results are reranked using rerank-english-v2.0
+Ask question → vector search → top-k chunks retrieved
 
-🤖 Final answer is generated via command-r using the top reranked chunks
+Results are reranked using rerank-english-v2.0
+
+Final answer is generated via command-r using the top reranked chunks
 
 ---
 
-📌 Example Use Cases
+Example Use Cases
 
 
 Internal company document Q&A
